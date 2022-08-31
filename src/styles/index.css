@@ -1,12 +1,165 @@
+* {
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-/* 
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.Jumbotor{
+  width: 100%;
+  height: 300px;
+  margin-top: 70px;
+  border-radius: 10px;
+  background-color:gainsboro;
+}
 
-*/
+.items { margin: 50px 30px;}
+
+.Jumbotor button {
+    display:flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-top: 10px;
+    border-radius: 7px;
+    background-color: dodgerblue;
+    border: none;
+    color:white;
+    padding: 7px;
+}
+
+.Card { display: flex;   
+  flex-wrap: wrap;
+  gap:3.5em;
+}
+
+.Card div {
+margin-top: 10px;
+flex-basis: 25%;
+text-align:center;
+max-width: 250px;
+flex-grow: 1;
+}
+
+.Card .pic {
+    background-color: gainsboro; 
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;}
+
+.Card button {
+    border-radius: 5px;
+    border: none;
+    color:white;
+    padding: 9px;
+    background-color:dodgerblue; 
+    margin-top: 5px;}
+
+.Card p { 
+    padding: 2px 20px;
+    text-align: justify;}
+
+.Card h2 {
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+box-shadow: 5px 0 10px rgba(0, 0, 0, 6);;
+}
+
+
+.list {
+list-style-type: none;
+background-color: #333;height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+.itemsM {
+  margin-right: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+.itemsL {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #f1f1f1;
+  cursor: pointer;
+  margin:0 30%  0 0;
+}
+
+
+.btn {
+  display: none;  
+  position: absolute;
+  right: 10px;
+  background-color: #414141;
+  top: 7px;
+  padding: 2px;
+  color: #000;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 500px ){
+  .list {
+    flex-direction: column;
+    height: auto;
+  }
+  .itemsM:nth-child(1){
+    margin-top: 50px;
+  }
+.items{
+  margin:40px 10px;
+  font-size: 12px;
+}
+
+.itemsM {
+  width: 100%;
+  text-align: center;
+  margin-right: 0px;
+  padding:15px 0;
+} 
+
+.itemsL {
+  width: 100%;
+  text-align: center;
+  margin-right: 0px;
+  padding:15px 0;
+}
+.btn {
+  display: block;
+}
+
+}
+
+.footer{
+  margin-top: 30px;
+  text-align: center;
+  background-color: #333;
+  height:200px;
+}
+
+.footer span {
+  color: white;
+  font-size: 24px;
+}
